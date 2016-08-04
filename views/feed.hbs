@@ -1,17 +1,27 @@
 <div class="container-fluid">
+  <div class="row">
+    <div class ="col-md-6 col-md-offset-3 col-xs-12">
+      <h1>Feed Page</h1>
+    </div>
+    <div class=" col-md-6 col col-md-offset-3 col-xs-12">
+      <h1>Look at them all!</h1><br><br>
+    </div>
     <div class="row">
       <div class ="col-md-6 col-md-offset-3 col-xs-12">
+
         <h1>Hey Hey! Look at them all!</h1>
       </div>
       <div class=" col-md-6 col col-md-offset-3 col-xs-12">
         <h1>You so Popular!</h1>
       </div>
       <ul>
-   {{#each favAnimalData}}
-    <li>{{this.firstname}}</li>
-    <p>{{this.animals}}</p>
-   {{/each}}
-  </ul>
-
-    </div>
+        {{#each favAnimalData}}
+        <li><strong>{{this.firstname}} {{this.lastname}}</strong></li>
+        <p>{{this.animals}}</p>
+        <p><em>"{{this.why}}"<em></p>
+        {{/each}}
+      </ul>
+      </div>
+   </div>
+  </div>
 </div>
