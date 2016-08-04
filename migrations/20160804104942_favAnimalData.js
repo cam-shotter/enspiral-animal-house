@@ -2,7 +2,8 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTableIfNotExists('favAnimalData', function(table) {
     table.increments('id');
-    table.string('name');
+    table.string('firstname');
+    table.string('lastname');
     table.string('animals');
     table.string('why')
   })
