@@ -2,6 +2,7 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #FFF5C3;
+  /*background-image: url(../images/tree_bark.png);*/
 }
 
 a {
@@ -9,7 +10,7 @@ a {
 }
 
 .background {
-  
+
   color: #192B33;
   height: 100vh;
 }

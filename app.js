@@ -59,6 +59,16 @@ app.use(function(err, req, res, next) {
   });
 });
 
+  // app.post('/cats', function(req,res) {
+  //   var newCat = req.body
+  //   var catLength = catDB.cats.length
+  //   var newID = catDB.cats[catLength-1].id
+  //   newCat.id = newID +1
+  //   catDB.cats.push(newCat);
+  //   res.redirect('/cats')
+  // })
+
+
 
 
 
