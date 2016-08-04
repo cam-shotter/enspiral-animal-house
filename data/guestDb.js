@@ -1,12 +1,15 @@
 var config = require('../knexfile').development
 var knex = require('knex')(config)
 
-function getUserName() {
-  return knex('favAnimalData').select('*')
+function getUserName(searchedAnimal) {
+  return knex('favAnimalData')
+    .select('*')
+    .where( { animal: req.body.animal } )
 }
-//
-// function insertName(username) {
-//   return knex('users').insert(username)
+
+
+// function insertName(animal) {
+//   return knex('search').insert(animal)
 // }
 
 module.exports = {

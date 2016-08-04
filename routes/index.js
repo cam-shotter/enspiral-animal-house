@@ -21,19 +21,16 @@ router.get('/welcome', function(req, res) {
 });
 
 router.get('/feed', function(req, res) {
-  searchAnimal = req.body.animal
+  // var searchAnimal = req.query.animal
+
   guestDb.getUserName()
-    .then(function(favAnimalData, searchAnimal) {
-        res.render('feed', { favAnimalData: favAnimalData, animal: searchAnimal });
+    .then(function(favAnimalData) {
+        res.render('feed', { favAnimalData: favAnimalData });
     })
     .catch(logError)
 });
 
 router.post('/welcome', function(req, res) {
-  // guestDb.insertName(req.body.name)
-  // // .catch(logError)
-  // res.redirect('./welcome')
-
   addName = req.body.name
   console.log("this is the addName: ", addName)
   res.render('./welcome',{ name: addName, title: 'Enspiral Database of Animals' })
