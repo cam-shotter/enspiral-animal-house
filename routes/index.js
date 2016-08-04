@@ -20,7 +20,11 @@ router.get('/welcome', function(req, res) {
 });
 
 router.get('/feed', function(req, res) {
-  res.render('feed', { name: 'test' });
+  guestDb.getUserName()
+    .then(function(favAnimalData) {
+        res.render('feed', {favAnimalData: favAnimalData});
+    })
+    .catch(logError)
 });
 
 router.post('/welcome', function(req, res) {
@@ -33,9 +37,9 @@ router.post('/welcome', function(req, res) {
   res.render('./welcome',{ name: addName, title: 'Enspiral Database of Animals' })
 });
 
-// function logError (err) {
-//   console.log(err.message);
-//   // res.status(500).send("Can't display page!")
-// }
+function logError (err) {
+  console.log(err.message);
+  res.status(500).send("Can't display page!")
+}
 
 module.exports = router;
