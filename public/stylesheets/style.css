@@ -1,11 +1,16 @@
 body {
-  padding: 50px;
+  padding: 100px 50px;
+  text-align: center;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
   background-color: #FFF5C3;
   background-image: url(../images/doggy.jpg);
 }
 
-
+.index-textbox {
+  margin: 0px 25% 0px 25%;
+  background-color: white;
+}
 
 a {
   color: #00B7FF;
