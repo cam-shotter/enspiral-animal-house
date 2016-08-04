@@ -2,11 +2,16 @@ body {
   padding: 100px 50px;
   text-align: center;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-position: center top ;
   background-color: #FFF5C3;
-  background-image: url(../images/tree_bark.png);
-  background-position: center;
+  background-image: url(../images/doggy.jpg);
 }
 
+.index-textbox {
+  margin: 0px 25% 0px 25%;
+  background-color: #D6D6D6;
+  opacity: 0.9;
+}
 a {
   color: #00B7FF;
 }
