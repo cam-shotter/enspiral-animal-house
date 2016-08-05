@@ -6,13 +6,3 @@ body {
   background-image: url(../images/tree_bark.png);
   background-position: center;
 }
-
-a {
-  color: #00B7FF;
-}
-
-.background {
-
-  color: #192B33;
-  height: 100vh;
-}
