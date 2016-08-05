@@ -12,6 +12,11 @@ a {
   color: #00B7FF;
 }
 
+.index{
+  margin: 0px 10% 0px 10%;
+  background-color: #D6D6D6;
+  opacity: 0.7;
+}
 .jumbotron {
   margin: 0px 25% 0px 25%;
   background-color: #ddd;
