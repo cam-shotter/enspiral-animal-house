@@ -32,14 +32,12 @@ router.post('/feed', function(req, res, next) {
   // console.log("this is the animal: ", searchAnimal)
   guestDb.getUserName(searchAnimal)
     .then(function(favAnimalData) {
-      console.log("Hey oops", favAnimalData)
       if(favAnimalData.length == 0){
         res.redirect('./oops')
         return
       }
       res.render('./feed', { favAnimalData: favAnimalData })
     })
-    // else {res.redirect('./oops')}
     .catch(logError)
 })
 

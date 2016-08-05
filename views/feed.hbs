@@ -1,26 +1,22 @@
-<!-- <div class="container-fluid">
-
-  </div> -->
-
-  <div class="jumbotron">
+<div class="jumbotron">
+    <div class="row">
+      <div class ="col-md-6 col-md-offset-3 col-xs-12">
+        <h1>You chose well</h1>
+        <h2>Hey Hey! Look at them all!</h2>
+      </div>
       <div class="row">
-        <div class ="col-md-6 col-md-offset-3 col-xs-12">
-          <h1>You chose well</h1>
-          <h2>Hey Hey! Look at them all!</h2>
+        <div class=" col-md-6 col col-md-offset-3 col-xs-12">
+          <h2>You and your animal choices are so Popular!</h2>
         </div>
-        <div class="row">
-          <div class=" col-md-6 col col-md-offset-3 col-xs-12">
-            <h2>You and your animal choices are so Popular!</h2>
-          </div>
-          <h3 class=" col-md-6 col col-md-offset-3 col-xs-12">
-            {{#each favAnimalData}}
-            <p><strong>{{this.firstname}} {{this.lastname}}</strong></p>
-            <p><button class="fa fa-thumbs-up like" aria-hidden="true"></button>
-                    {{this.animals}}</p>
-            <p><em>"{{this.why}}"<em></p>
-              <br>
-            {{/each}}
-          </h3>
-          </div>
-       </div>
-  </div>
+        <h3 class=" col-md-6 col col-md-offset-3 col-xs-12">
+          {{#each favAnimalData}}
+          <p><strong>{{this.firstname}} {{this.lastname}}</strong></p>
+          <p><button class="fa fa-thumbs-up like" aria-hidden="true"></button>
+                  {{this.animals}}</p>
+          <p><em>"{{this.why}}"<em></p>
+            <br>
+          {{/each}}
+        </h3>
+        </div>
+     </div>
+</div>
