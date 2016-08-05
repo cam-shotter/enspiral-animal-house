@@ -8,11 +8,6 @@ function getUserName(animals) {
 }
 
 
-// function insertName(animal) {
-//   return knex('search').insert(animal)
-// }
-
 module.exports = {
   getUserName: getUserName
-  // insertName: insertName
 }
