@@ -5,4 +5,15 @@ body {
   background-color: #FFF5C3;
   background-image: url(../images/tree_bark.png);
   background-position: center;
+  color: black;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.jumbotron {
+  margin: 0px 25% 0px 25%;
+  background-color: #ddd;
+  opacity: 0.7;
 }
