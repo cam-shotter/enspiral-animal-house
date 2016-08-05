@@ -11,9 +11,8 @@
         <h3 class=" col-md-6 col col-md-offset-3 col-xs-12">
           {{#each favAnimalData}}
           <p><strong>{{this.firstname}} {{this.lastname}}</strong></p>
-          <p><button class="fa fa-thumbs-up like" aria-hidden="true"></button>
-                  {{this.animals}}</p>
-          <p><em>"{{this.why}}"<em></p>
+          <p><button class="fa fa-thumbs-up like" aria-hidden="true"></button> "My favorite animal is {{this.animals}} because they are {{this.why}}"</p>
+          <!-- <p><em>""<em></p> -->
             <br>
           {{/each}}
         </h3>
