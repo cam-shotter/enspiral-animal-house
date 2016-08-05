@@ -20,15 +20,13 @@ router.get('/welcome', function(req, res) {
   res.render('welcome', { title: 'Enspiral Database of Animals', name: addName});
 });
 
-router.get('/feed', function(req, res) {
-  // var searchAnimal = req.query.animal
-
-  guestDb.getUserName()
-    .then(function(favAnimalData) {
-        res.render('feed', { favAnimalData: favAnimalData });
-    })
-    .catch(logError)
-});
+// router.get('/feed', function(req, res) {
+//   guestDb.getUserName()
+//     .then(function(favAnimalData) {
+//         res.render('feed', { favAnimalData: favAnimalData });
+//     })
+//     .catch(logError)
+// });
 
 router.post('/welcome', function(req, res) {
   addName = req.body.name
@@ -39,7 +37,12 @@ router.post('/welcome', function(req, res) {
 router.post('/feed', function(req, res) {
   searchAnimal = req.body.animal
   console.log("this is the animal: ", searchAnimal)
-  res.render('./feed', { animal: searchAnimal })
+  guestDb.getUserName(searchAnimal)
+  // .then( if (searchAnimal) )
+    .then(function(favAnimalData) {
+      res.render('./feed', { favAnimalData: favAnimalData })
+    })
+    .catch(logError)
 })
 
 function logError (err) {

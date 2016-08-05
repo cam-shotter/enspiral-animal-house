@@ -2,22 +2,15 @@ body {
   padding: 100px 50px;
   text-align: center;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-position: center top ;
+  background-position: center top;
   background-color: #FFF5C3;
   background-image: url(../images/doggy.jpg);
+  background-repeat: no-repeat;
+  max-height: 100vh;
 }
 
 .index-textbox {
   margin: 0px 25% 0px 25%;
   background-color: #D6D6D6;
-  opacity: 0.9;
-}
-a {
-  color: #00B7FF;
-}
-
-.background {
-
-  color: #192B33;
-  height: 100vh;
+  opacity: 0.7;
 }

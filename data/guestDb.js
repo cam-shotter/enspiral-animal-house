@@ -1,10 +1,10 @@
 var config = require('../knexfile').development
 var knex = require('knex')(config)
 
-function getUserName(searchedAnimal) {
+function getUserName(animals) {
   return knex('favAnimalData')
     .select('*')
-    .where( { animal: req.body.animal } )
+    .where( { animals: animals } )
 }
 
 
@@ -13,6 +13,6 @@ function getUserName(searchedAnimal) {
 // }
 
 module.exports = {
-  getUserName: getUserName,
+  getUserName: getUserName
   // insertName: insertName
 }
